@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class = "jumbotron">
+		<p>Welcom to Puppy Name Check</p>
+		<p>Let's see if your User Name is secure!</p>
+		<p>Fill out the form below with a User Name that has these restraints</p>
+		<ul>
+			<li>Must have an upper case letter somewhere</li>
+			<li>Must have an lower case letter somewhere</li>
+			<li>Must have a number at the end</li>
+		</ul>
+		<form action = "{{ url_for('report')}}">
+			<label for = 'dateofmemo'>Date of Memo</label>
+			<input type="text" name="dateofmemo" id = "dateofmemo">
+			<br>
+
+			<label for = 'engagementclient'>Engagement Client</label>
+			<input type="text" name="engagementclient" id = "engagementclient">
+			<br>
+
+			<label for = 'meetingdate'>Meeting Date</label>
+			<input type="text" name="meetingdate" id = "meetingdate">
+			<br>
+
+			<label for = 'auditpartner'>Audit Partner Name</label>
+			<input type="text" name="auditpartner" id = "auditpartner">
+			<br>
+
+			<label for = 'auditmanager'>Audit Manager Name</label>
+			<input type="text" name="auditmanager" id = "auditmanager">
+			<br>
+
+
+			<label for = 'headofda'>Head of DA Name</label>
+			<input type="text" name="headofda" id = "headofda">
+			<br>
+
+
+			<label for = 'dasenior'>DA Senior</label>
+			<input type="text" name="dasenior" id = "dasenior">
+			<br>
+
+
+			<label for = 'datasource'>Data Source</label>
+			<input type="text" name="datasource" id = "datasource">
+
+			<br>
+			<input type="submit">
+
+		</form>
+	</div>	
+{% endblock %}
